@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    background-color: rgba(198, 223, 249, 0.697);
+    position: relative;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    /* padding: 20px; */
+}
+
+/* .grid-container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .img1{grid-area: amazon-rainforest;}
+.img2{grid-area: arenal-volcano;}
+.img3{grid-area: aurora-borealis;}
+.img4{grid-area: bay-of-fundy;}
+.img5{grid-area: dead-sea;} */
+
+.grid-container{
+    display: grid;
+    padding: 20px;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,200px);
+    /* grid-template-areas: "amazon-rainforest amazon-rainforest arenal-volcano arenal-volcano aurora-borealis"
+    "bay-of-fundy bay-of-fundy bay-of-fundy dead-sea dead-sea"; */
+}
+
+.grid-container #img-1{
+    grid-row:span 2;
+    grid-column: 1/5;
+}
+
+.grid-container .img-2{
+    grid-row: 3fr;
+    grid-column: 1/2;
+}
+
+.grid-container .img-3{
+    grid-row:span 2;
+    grid-column: span 1.5;
+}
+
+.grid-container .img-15{
+    /* grid-column: 3/5; */
+    grid-row: span 2;
+}
+
+.grid-container .img-11{
+    grid-column: 3/5;
+}
